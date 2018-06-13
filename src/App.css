@@ -2,24 +2,74 @@
   text-align: center;
 }
 
+.Main-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Main-nav nav {
+    flex: 1;
+    display: flex;
+}
+
+.Main-nav a {
+    padding: 1vw;
+}
+
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+.Settings {
+    background-color: #444;
+    color: white;
+}
+
+.Sections {
+    display: flex;
+    justify-content: center;
+}
+
+.Sections section {
+    padding: 2vw;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
 }
 
 .App-title {
+    color: white;
   font-size: 1.5em;
 }
 
 .App-intro {
   font-size: large;
+}
+
+.Content {
+    display: flex;
+}
+
+.Content *:first-child {
+    flex: 1;
+}
+
+.List {
+padding: 4vw;
+}
+
+.List-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.List-item *:first-child {
+    margin-right: auto;
 }
 
 @keyframes App-logo-spin {
