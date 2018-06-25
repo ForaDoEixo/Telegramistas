@@ -1,10 +1,11 @@
 {
-  "name": "twitter-slurp",
+  "name": "telegramistas",
+  "main": "electron/main.js",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001",
   "dependencies": {
-    "clone-deep": "^4.0.0",
-    "fast-deep-equal": "^2.0.1",
+    "puppeteer": "^1.5.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-redux": "^5.0.7",
@@ -12,10 +13,11 @@
     "react-router-transition": "^1.2.1",
     "react-scripts": "1.1.4",
     "redux": "^4.0.0",
+    "redux-action-tools": "^1.2.2",
     "redux-actions": "^2.4.0",
     "redux-storage": "^4.1.2",
     "redux-storage-engine-localforage": "^2.0.0",
-    "twitter": "^1.7.1",
+    "redux-thunk": "^2.3.0",
     "typography": "^0.16.17",
     "typography-theme-lincoln": "^0.15.11"
   },
@@ -23,6 +25,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "electron": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^2.0.3"
   }
 }

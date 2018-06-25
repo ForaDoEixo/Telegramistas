@@ -1,8 +1,26 @@
+.idCard {
+    width: auto;
+    display: flex;
+    padding: 1vw;
+    margin: 1vw;
+    background-color: #bbb;
+}
+
+.profilePic {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 10vw;
+    background-color: #000;
+    margin: 1vw;
+}
+
 .App {
   text-align: center;
 }
 
 .Main-nav {
+    background-color: #222;
+    color: white;
     display: flex;
     justify-content: space-between;
 }
@@ -33,22 +51,6 @@
 
 .Sections section {
     padding: 2vw;
-}
-
-.App-header {
-    background-color: #222;
-    height: 150px;
-    padding: 20px;
-    color: white;
-}
-
-.App-title {
-    color: white;
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
 }
 
 .Content {
