@@ -44,16 +44,6 @@ export const makeReducer = (actionsTypes, creators, defaultState = {}) => {
     }
 }
 
-export const makeActionTypes = (creators) => {
-    const actionKeys = Object.keys(creators)
-
-    return actionKeys.reduce((actionTypes, type) => (
-        Object.assign(actionTypes, {
-            [type]: `TG/CHROME/${type}`
-        })
-    ), {})
-}
-
 export const makeActions = (actionTypes, creators) => {
     return Object.keys(actionTypes).reduce((actions, type) => {
         const creator = creators[type]

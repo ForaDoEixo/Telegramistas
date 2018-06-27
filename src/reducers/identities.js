@@ -1,7 +1,7 @@
 import * as utils from './utils'
 import {remote} from 'electron'
 
-const puppet = remote.require('../puppet')
+const puppet = remote.require('./src/puppet/index.js')
 
 const openTelegram = {
     promiseCreator: (config, dispatch, getState) =>  puppet(config),
@@ -32,7 +32,16 @@ const creators = {
     }
 }
 
-const actionTypes = utils.makeActionTypes(creators)
+const makeActionTypes = (creators) => {
+    const actionKeys = Object.keys(creators)
+
+    return actionKeys.reduce((actionTypes, type) => (
+        Object.assign(actionTypes, {
+            [type]: `TG/CHROME/${type}`
+        })
+    ), {})
+}
+const actionTypes = makeActionTypes(creators)
 
 export default {
     actions: utils.makeActions(actionTypes, creators),
