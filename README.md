@@ -1,3 +1,15 @@
+# Telegramistas
+Create Disposable Identities on Telegram
+
+![GitHub](https://img.shields.io/github/license/ForaDoEixo/telegramista.svg)
+[![chatroom icon](https://patrolavia.github.io/telegram-badge/chat.png)](https://t.me/joinchat/AEg1X1NZqgligtfGV7x3Og)
+
+# Screenshot
+![Screenshot](./screenshots/0.png)
+![Screenshot](./screenshots/1.png)
+
+/!\ This is a work in progress and will most likely not work /!\
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
