@@ -1,7 +1,7 @@
 # Telegramistas
 Create Disposable Identities on Telegram
 
-![GitHub](https://img.shields.io/github/license/ForaDoEixo/telegramista.svg)
+![GitHub](https://img.shields.io/github/license/ForaDoEixo/telegramistas.svg)
 [![chatroom icon](https://patrolavia.github.io/telegram-badge/chat.png)](https://t.me/joinchat/AEg1X1NZqgligtfGV7x3Og)
 
 # Screenshot
